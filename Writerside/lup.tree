@@ -7,5 +7,7 @@
                  start-page="starter-topic.md">
 
     <toc-element topic="starter-topic.md"/>
-    <toc-element topic="tutorial-uno-platform.md"/>
+<toc-element toc-title="Projetos">
+        <toc-element topic="tutorial-uno-platform.md"/>
+</toc-element>
 </instance-profile>
