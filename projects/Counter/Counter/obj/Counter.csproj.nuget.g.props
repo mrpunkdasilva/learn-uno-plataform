@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/home/mrpunkdasilva/.nuget/packages/</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/home/mrpunkdasilva/.nuget/packages/</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.14.0</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="/home/mrpunkdasilva/.nuget/packages/" />
+  </ItemGroup>
+  <ImportGroup Condition=" '$(TargetFramework)' == 'net9.0-desktop' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)uno.foundation/6.1.34/buildTransitive/Uno.Foundation.props" Condition="Exists('$(NuGetPackageRoot)uno.foundation/6.1.34/buildTransitive/Uno.Foundation.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.winrt/6.1.34/buildTransitive/Uno.WinRT.props" Condition="Exists('$(NuGetPackageRoot)uno.winrt/6.1.34/buildTransitive/Uno.WinRT.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.fonts.fluent/2.6.1/buildTransitive/Uno.Fonts.Fluent.props" Condition="Exists('$(NuGetPackageRoot)uno.fonts.fluent/2.6.1/buildTransitive/Uno.Fonts.Fluent.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.winui/6.1.34/buildTransitive/net8.0/uno.winui.props" Condition="Exists('$(NuGetPackageRoot)uno.winui/6.1.34/buildTransitive/net8.0/uno.winui.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.winui.runtime.skia.x11/6.1.34/buildTransitive/Uno.WinUI.Runtime.Skia.X11.props" Condition="Exists('$(NuGetPackageRoot)uno.winui.runtime.skia.x11/6.1.34/buildTransitive/Uno.WinUI.Runtime.Skia.X11.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.winui.runtime.skia.wpf/6.1.34/buildTransitive/Uno.WinUI.Runtime.Skia.Wpf.props" Condition="Exists('$(NuGetPackageRoot)uno.winui.runtime.skia.wpf/6.1.34/buildTransitive/Uno.WinUI.Runtime.Skia.Wpf.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.windows.sdk.win32metadata/60.0.34-preview/buildTransitive/netstandard1.0/Microsoft.Windows.SDK.Win32Metadata.props" Condition="Exists('$(NuGetPackageRoot)microsoft.windows.sdk.win32metadata/60.0.34-preview/buildTransitive/netstandard1.0/Microsoft.Windows.SDK.Win32Metadata.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.windows.wdk.win32metadata/0.11.4-experimental/buildTransitive/netstandard1.0/Microsoft.Windows.WDK.Win32Metadata.props" Condition="Exists('$(NuGetPackageRoot)microsoft.windows.wdk.win32metadata/0.11.4-experimental/buildTransitive/netstandard1.0/Microsoft.Windows.WDK.Win32Metadata.props')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.windows.sdk.win32docs/0.1.42-alpha/buildTransitive/netstandard1.0/Microsoft.Windows.SDK.Win32Docs.props" Condition="Exists('$(NuGetPackageRoot)microsoft.windows.sdk.win32docs/0.1.42-alpha/buildTransitive/netstandard1.0/Microsoft.Windows.SDK.Win32Docs.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.winui.runtime.skia.win32/6.1.34/buildTransitive/Uno.WinUI.Runtime.Skia.Win32.props" Condition="Exists('$(NuGetPackageRoot)uno.winui.runtime.skia.win32/6.1.34/buildTransitive/Uno.WinUI.Runtime.Skia.Win32.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.winui.runtime.skia.macos/6.1.34/buildTransitive/Uno.WinUI.Runtime.Skia.MacOS.props" Condition="Exists('$(NuGetPackageRoot)uno.winui.runtime.skia.macos/6.1.34/buildTransitive/Uno.WinUI.Runtime.Skia.MacOS.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.winui.runtime.skia.linux.framebuffer/6.1.34/buildTransitive/Uno.WinUI.Runtime.Skia.Linux.FrameBuffer.props" Condition="Exists('$(NuGetPackageRoot)uno.winui.runtime.skia.linux.framebuffer/6.1.34/buildTransitive/Uno.WinUI.Runtime.Skia.Linux.FrameBuffer.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.winui.devserver/6.1.34/buildTransitive/Uno.WinUI.DevServer.props" Condition="Exists('$(NuGetPackageRoot)uno.winui.devserver/6.1.34/buildTransitive/Uno.WinUI.DevServer.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.ui.hotdesign/1.14.56/build/Uno.UI.HotDesign.props" Condition="Exists('$(NuGetPackageRoot)uno.ui.hotdesign/1.14.56/build/Uno.UI.HotDesign.props')" />
+    <Import Project="$(NuGetPackageRoot)uno.sdk.extras/6.1.1/buildTransitive/Uno.Sdk.Extras.props" Condition="Exists('$(NuGetPackageRoot)uno.sdk.extras/6.1.1/buildTransitive/Uno.Sdk.Extras.props')" />
+    <Import Project="$(NuGetPackageRoot)skiasharp.nativeassets.webassembly/3.119.0/buildTransitive/netstandard1.0/SkiaSharp.NativeAssets.WebAssembly.props" Condition="Exists('$(NuGetPackageRoot)skiasharp.nativeassets.webassembly/3.119.0/buildTransitive/netstandard1.0/SkiaSharp.NativeAssets.WebAssembly.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'net9.0-desktop' AND '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgUno_Foundation Condition=" '$(PkgUno_Foundation)' == '' ">/home/mrpunkdasilva/.nuget/packages/uno.foundation/6.1.34</PkgUno_Foundation>
+    <PkgUno_WinRT Condition=" '$(PkgUno_WinRT)' == '' ">/home/mrpunkdasilva/.nuget/packages/uno.winrt/6.1.34</PkgUno_WinRT>
+    <PkgUno_WinUI Condition=" '$(PkgUno_WinUI)' == '' ">/home/mrpunkdasilva/.nuget/packages/uno.winui/6.1.34</PkgUno_WinUI>
+    <PkgMicrosoft_Windows_CsWin32 Condition=" '$(PkgMicrosoft_Windows_CsWin32)' == '' ">/home/mrpunkdasilva/.nuget/packages/microsoft.windows.cswin32/0.3.106</PkgMicrosoft_Windows_CsWin32>
+    <PkgUno_WinUI_DevServer Condition=" '$(PkgUno_WinUI_DevServer)' == '' ">/home/mrpunkdasilva/.nuget/packages/uno.winui.devserver/6.1.34</PkgUno_WinUI_DevServer>
+    <PkgUno_UI_HotDesign Condition=" '$(PkgUno_UI_HotDesign)' == '' ">/home/mrpunkdasilva/.nuget/packages/uno.ui.hotdesign/1.14.56</PkgUno_UI_HotDesign>
+    <PkgUno_Settings_DevServer Condition=" '$(PkgUno_Settings_DevServer)' == '' ">/home/mrpunkdasilva/.nuget/packages/uno.settings.devserver/1.4.11</PkgUno_Settings_DevServer>
+  </PropertyGroup>
+</Project>

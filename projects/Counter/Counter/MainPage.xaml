@@ -1,0 +1,44 @@
+﻿<Page
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    x:Class="Counter.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:local="using:Counter"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Page.DataContext>
+        <local:MainViewModel />
+    </Page.DataContext>
+    <StackPanel VerticalAlignment="Center">
+        <Image
+            Height="150"
+            HorizontalAlignment="Center"
+            Margin="12"
+            Source="Assets/logo.png"
+            Width="150" />
+
+        <TextBox
+            HorizontalAlignment="Center"
+            Margin="12"
+            PlaceholderText="Step Size"
+            Text="{Binding Step, Mode=TwoWay}"
+            TextAlignment="Center" />
+
+        <TextBlock
+            HorizontalAlignment="Center"
+            Margin="12"
+            TextAlignment="Center">
+            <Run Text="Counter: " /><Run Text="{Binding Count}" />
+        </TextBlock>
+
+        <Button
+            Command="{Binding IncrementCommand}"
+            Content="Increment Counter by Step Size"
+            HorizontalAlignment="Center"
+            Margin="12" />
+
+        <Button
+            Command="{Binding NavigateToDetailsCommand}"
+            Content="Ver Detalhes"
+            HorizontalAlignment="Center"
+            Margin="12" />
+    </StackPanel>
+</Page>

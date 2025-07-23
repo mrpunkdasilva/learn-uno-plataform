@@ -1,0 +1,10 @@
+<Page
+    x:Class="Counter.DetailPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+        <TextBlock x:Name="InfoTextBlock" FontSize="24" Text="Detalhes do Contador" />
+        <Button Content="Voltar" Click="GoBackButton_Click" Margin="0,20,0,0" />
+    </StackPanel>
+</Page>
